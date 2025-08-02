@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Spotify</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="main-header">
+
+            <div class="header-group left-group">
+                <button class="icon-button"><img src="assets/threedots.svg" alt="mais opções"></button>
+
+                <div class="arrow-controls">
+                    <button class="arrow-button" title="voltar"><img src="assets/leftarrow.svg" alt="voltar"></button>
+                    <button class="arrow-button" title="avançar"><img src="assets/rightarrow.svg" alt="Avançar"></button>
+                </div>
+            </div>
+
+            <div class="header-group center-group">
+                <button class="icon-button home-button" title="Início"><img src="assets/home.svg" alt="inicio"></button>
+
+                <label class="search-container" for="search-input">
+                    <img class="lupa" title="Buscar" src="assets/search.svg" alt="buscar">
+                    <input type="text" id="search-input" placeholder="O que você quer ouvir?">
+                </label>
+            </div>
+
+            <div class="header-group right-group">
+                <button class="icon-button bell-button" title="Novidades"><img src="assets/bell.svg" alt="novidades"></button>
+                <button class="icon-button" title="Conta"><img src="assets/profile.svg" alt="perfil"></button>
+            </div>
+
+            </header>
+            <main>
+                <div class="sidebar">
+                    <section class="sidebar section">
+                        <div class="sidebar-header">
+
+                            <div class="library">
+                                <button class="nav-button">
+                                    <img src="assets/yourlibrary.svg" alt="biblioteca">
+                                    <span>Sua Biblioteca</span>
+                                </button>
+                            </div>
+                            
+
+                            <div class="create">
+                                <button class="create-button">
+                                    <img src="assets/plus.svg" alt="criar">
+                                    <span>Criar</span>
+                                </button>
+                            </div>
+
+                            <div class="icon-button">
+                                <button class="full-screen-button">
+                                    <img src="assets/fullscreen.svg" alt="">
+                                </button>
+                            </div>
+                        
+                            <div class="sidebar-categories">
+                                <button class="category-button">Playlist</button>
+                                <button class="category-button">Podcasts</button>
+                                <button class="category-button">Artistas</button>
+                                <button class="category-button">Baixados</button>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="sidebar-section sidebar-library">
+                            <header class="library-header">
+                                <div class="sidebar-search">
+                                    <button class="icon-button">
+                                        <img src="assets/search.svg" alt="">
+                                    </button>
+
+                                    <button class="text-recent-button">
+                                        <span>Recentes</span>
+                                        <img src="assets/threebar.svg" alt="ordenar">
+                                    </button>
+                                </div>
+                            </header>
+                        
+
+                        <div class="library-list">
+                            <ul>
+                                <li>
+                                    <a href="#" class="playlist-item">
+                                        <div class="playlist-item-details">
+                                            <span class="playlist-item-title">#Playlist-1</span>
+                                            <span class="playlist-item-subtitle">• Playlist</span>
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="playlist-item">
+                                        <div class="playlist-item-details">
+                                            <span class="playlist-item-title">#Playlist-2</span>
+                                            <span class="playlist-item-subtitle">• Playlist</span>
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="playlist-item">
+                                        <div class="playlist-item-details">
+                                            <span class="playlist-item-title">#Playlist-3</span>
+                                            <span class="playlist-item-subtitle">• Playlist</span>
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="playlist-item">
+                                        <div class="playlist-item-details">
+                                            <span class="playlist-item-title">#Playlist-4</span>
+                                            <span class="playlist-item-subtitle">• Playlist</span>
+                                        </div>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="playlist-item">
+                                        <div class="playlist-item-details">
+                                            <span class="playlist-item-title">#Playlist-5</span>
+                                            <span class="playlist-item-subtitle">• Playlist</span>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                </section>
+            </div>
+
+            <div class="main-content">
+                <div class="album-page-top">
+                    <section class="album-header">
+                        <div class="album-artwork">
+                            <img class="cover" src="images/playlistcover.jpeg" alt="Capa do álbum Back in Black">
+                        </div>
+
+                        <div class="album-details">
+                            <span class="album-type">Álbum</span>
+                            <h1 class="album-title">Back In Black</h1>
+                            <div class="album-meta">
+                                <span class="meta-text"><span class="contrast-text">AC/DC</span> • 1980 • 10 músicas, 42min 8 s</span>
+                            </div>
+                        </div>
+                    </section>
+
+                    <div class="action-bar">
+                        <button class="play-button-large" title="Play"><svg role="img" height="32" width="25" viewBox="0 0 24 24" fill="black"><path d="M7.05 3.606l13.49 7.788a.7.7 0 010 1.212L7.05 20.394A.7.7 0 016 19.788V4.212a.7.7 0 011.05-.606z"></path></svg></button>
+                        <button class="icon-button-large" title="Ativar a ordem aleatória para Back In Black"><img src="assets/shuffle.svg" alt="ordem aletória"></button>
+                        <button class="icon-button-large" title="Salvar na sua Biblioteca"><img src="assets/circleplus.svg" alt=""></button>
+                        <button class="icon-button-large" title="Baixar"><img src="assets/download.svg" alt="download"></button>
+                        <button class="icon-button-large" title="Mais opções para Back In Black"><img src="assets/threedots2.svg" alt="Mais opções do álbum"></button>
+                        <button class="icon-button-large icon-list">Lista<img src="assets/threebar.svg" alt="lista"></button>
+                    </div>
+                </div>                    
+                    
+
+                <div class="album-page-content">
+                    <div class="track-list-container">
+                        <div class="track-list-header">
+                            <div class="track-header-num">#</div>
+                            <div class="track-header-title">Título</div>
+                            <div class="track-header-plays">Reproduções</div>
+                            <div class="track-header-duration"><img src="assets/clock.svg" alt=""></div>
+                        </div>
+
+                        <ul class="track-list">
+                            <li class="track-item">
+                                <div class="track-item-num">1</div>
+                                <div class="track-item-details">
+                                    <span class="track-item-name">Hells Bells</span> 
+                                    <span class="track-item-artist">Videoclipe • AC/DC</span>
+                                </div>
+                                <div class="track-item-plays">505.079.336</div>
+                                <div class="track-item-duration">5:12</div>
+                            </li>
+
+                            <li class="track-item">
+                                <div class="track-item-num">2</div>
+                                <div class="track-item-details">
+                                    <span class="track-item-name">Shoot to thrill</span> 
+                                    <span class="track-item-artist">Videoclipe • AC/DC</span>
+                                </div>
+                                <div class="track-item-plays">469.505.309</div>
+                                <div class="track-item-duration">5:17</div>
+                            </li>
+
+                            <li class="track-item">
+                                <div class="track-item-num">3</div>
+                                <div class="track-item-details">
+                                    <span class="track-item-name">What Do You Do for Money Honey</span> 
+                                    <span class="track-item-artist">Videoclipe • AC/DC</span>
+                                </div>
+                                <div class="track-item-plays">52.658.099</div>
+                                <div class="track-item-duration">3:35</div>
+                            </li>
+
+                            <li class="track-item">
+                                <div class="track-item-num">4</div>
+                                <div class="track-item-details">
+                                    <span class="track-item-name">Givin the Dog a Bone</span>
+                                    <span class="track-item-artist">AC/DC</span>
+                                </div>
+                                <div class="track-item-plays">33.781.977</div>
+                                <div class="track-item-duration">3:31</div>
+                            </li>
+
+                            <li class="track-item">
+                                <div class="track-item-num">5</div>
+                                <div class="track-item-details">
+                                    <span class="track-item-name">Let Me Put My Love Into You</span> 
+                                    <span class="track-item-artist">Videoclipe • AC/DC</span>
+                                </div>
+                                <div class="track-item-plays">33.690.182</div>
+                                <div class="track-item-duration">4:15</div>
+                            </li>
+
+                            <li class="track-item">
+                                <div class="track-item-num">6</div>
+                                <div class="track-item-details">
+                                    <span class="track-item-name">Back In Black</span> 
+                                    <span class="track-item-artist">Videoclipe • AC/DC</span>
+                                </div>
+                                <div class="track-item-plays">1.902.469.508</div>
+                                <div class="track-item-duration">4:15</div>
+                            </li>
+
+                            <li class="track-item">
+                                <div class="track-item-num">7</div>
+                                <div class="track-item-details">
+                                    <span class="track-item-name">You Shook My All Night Long</span> 
+                                    <span class="track-item-artist">Videoclipe • AC/DC</span>
+                                </div>
+                                <div class="track-item-plays">1.482.867.325</div>
+                                <div class="track-item-duration">3:30</div>
+                            </li>
+
+                            <li class="track-item">
+                                <div class="track-item-num">8</div>
+                                <div class="track-item-details">
+                                    <span class="track-item-name">Have a Drink on Me</span> 
+                                    <span class="track-item-artist">AC/DC</span>
+                                </div>
+                                <div class="track-item-plays">84.760.354</div>
+                                <div class="track-item-duration">3:58</div>
+                            </li>
+
+                            <li class="track-item">
+                                <div class="track-item-num">9</div>
+                                <div class="track-item-details">
+                                    <span class="track-item-name">Shake a Leg</span> 
+                                    <span class="track-item-artist">AC/DC</span>
+                                </div>
+                                <div class="track-item-plays">24.631.344</div>
+                                <div class="track-item-duration">4:05</div>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+
+                <footer>
+                    <div class="album-footer">
+                        <div class="cover-footer">
+                            <img src="images/playlistcover.jpeg" alt="capa do álbum">
+                        </div>
+                        <div class="album-details-footer">
+                            <span class="name-album-footer">Back In Black</span> 
+                            <span class="label-artist-footer">Videoclipe • AC/DC</span>
+                        </div>
+
+                        <div class=""></div>
+                    </div>
+                </footer>
+
+            </div>
+
+        </main>
+    </div>
+</body>
+</html>
