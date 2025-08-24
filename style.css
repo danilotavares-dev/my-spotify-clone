@@ -7,7 +7,7 @@
 
 html, body {
     height: 100%;
-    overflow: hidden; 
+    overflow: auto; 
     color: white; 
     font-family: Arial, Helvetica, sans-serif;
     background-color: black;
@@ -190,7 +190,9 @@ main {
     overflow-y: auto;
 }
 
-
+.sidebar {
+    
+}
 
 
 
@@ -398,19 +400,94 @@ footer {
     padding: 38px 1.8rem;
     background-color: #000000;
     z-index: 10;
+
+
 }
+
+.album-footer, .play-control-footer, .options-footer {
+    flex: 1;
+}
+
+/* PLAYLIST/MUSICA SENDO TOCADA */
 
 .album-footer {
     display: flex;
     align-items: center;
+    gap: 12px;
 }
 
 .cover-footer img{
     width: 53px;
+    border-radius: 2px;
 }
 
 .album-details-footer {
+    display: flex;
+    flex-direction: column;
     font-size: 14px;
-    padding: 10px;
-    display: grid;
 }
+
+.name-album-footer {
+    color: white;
+    font-weight: 600;
+}
+
+.label-artist-footer {
+    color: #B3B3B3;
+    font-size: 13px;
+}
+
+
+
+/* CONTROLE DA MUSICA SENDO TOCADA */
+
+.play-control-footer {
+    padding: 10px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.control-footer {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.control-footer img{
+    width: 18px;
+    margin: 0 0 6px 0;
+    vertical-align: middle;
+}
+
+.button-footer {
+    background-color: transparent;
+    align-items: center;
+    border: none;
+}
+
+.button-footer img{
+    width: 15px;
+}
+
+.play-button-footer {
+    background-color: white;
+    border: none;
+    padding: 4px;
+    margin: 0 0 6px 0;
+    border-radius: 50px;
+    align-items: center;
+}
+
+.time-music {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    flex-wrap: nowrap;
+}
+
+.duration-music-footer {
+    color: #B3B3B3;
+    font-size: 12px;
+}
+
