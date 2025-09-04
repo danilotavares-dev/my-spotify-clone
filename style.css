@@ -184,17 +184,108 @@ main {
 
 
 /* --- BARRA LETERAL ESQUERDA --- */
+
 .sidebar, .main-content {
     background-color: #121212;
     border-radius: 8px;
     overflow-y: auto;
 }
 
-.sidebar {
-    
+.sidebar-header {
+    display: grid;
+    grid-template-columns: 4fr 2fr 0.5fr;
+    padding: 20px 12px 0px 30px;
 }
 
+.sidebar-categories {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 40px 15px 15px;
+}
 
+.sidebar-search {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;   
+    padding: 2px 12px 10px 15px;
+}
+
+.nav-button {
+    color: white;
+    border: transparent;
+    background: none;
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.create-button {
+    padding: 5px 10px;
+    margin-top: -7px;
+    display: flex;
+    align-items: center;   
+    gap: 3.5px;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    background-color: #1F1F1F;
+}
+
+.full-screen-button {
+    border: none;
+    background: none;
+    margin-top: -7px;
+}
+
+.full-screen-button img {
+    width: 13px;
+}
+
+.category-button {
+    padding: 8px 10px;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    background-color: #2A2A2A;
+}
+
+.recent-button {
+    padding: 0px 8px 0px 0px;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    border: none;
+    background: none;
+    color: #B3B3B3;
+    font-size: 13px;
+}
+
+.recent-button img {
+    width: 18px;
+}
+
+.library-list {
+    padding: 10px;
+}
+
+.playlist-item-details {
+    display: flex;
+    justify-content: start;
+    padding: 0 0 13px 0;
+    font-size: 14px;
+    border-radius: 6px;
+    color: white;
+
+    transition: background-color 0.2s ease;
+}
+
+.playlist-item-subtitle {
+    color: #B3B3B3;
+}
+
+.playlist-item-details:hover {
+    background-color: #2A2A2A;
+}
 
 /* ---------------------------------------------------- */
 
@@ -312,7 +403,8 @@ main {
     display: flex;
     align-items: center;
     gap: 8px;
-    
+    margin-left: auto;
+
     right: 20px;
     font-size: 14px;
 }
@@ -475,7 +567,7 @@ footer {
     border: none;
     padding: 4px;
     margin: 0 0 6px 0;
-    border-radius: 50px;
+    border-radius: 50%;
     align-items: center;
 }
 
