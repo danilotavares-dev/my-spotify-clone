@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none" aria-hidden="true">
+  <!-- Cantos estilo "crop" -->
+  <!-- canto superior esquerdo -->
+  <path d="M18 6 H8 v10" stroke="#000" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+  <!-- canto superior direito -->
+  <path d="M46 6 H56 v10" stroke="#000" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+  <!-- canto inferior esquerdo -->
+  <path d="M8 48 v10 h10" stroke="#000" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+  <!-- canto inferior direito -->
+  <path d="M56 48 v10 h-10" stroke="#000" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+
+  <!-- opcional: contorno sutil do quadrado (sem preencher) -->
+  <!-- <rect x="12" y="12" width="40" height="40" rx="4" stroke="#000" stroke-width="1" fill="none" /> -->
+</svg>

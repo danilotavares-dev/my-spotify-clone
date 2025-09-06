@@ -496,7 +496,7 @@ footer {
 
 }
 
-.album-footer, .play-control-footer, .options-footer {
+.album-footer, .play-control-footer, .options-player-footer {
     flex: 1;
 }
 
@@ -558,7 +558,7 @@ footer {
     border: none;
 }
 
-.button-footer img{
+.button-footer img {
     width: 15px;
 }
 
@@ -581,5 +581,42 @@ footer {
 .duration-music-footer {
     color: #B3B3B3;
     font-size: 12px;
+}
+
+/* opções do player */
+
+.options-player-footer {
+    display: flex;
+    justify-content: end;
+    gap: 14px;
+}
+
+.icon-player-footer {
+    align-items: center;
+    background: none;
+    border: none;
+}
+
+.icon-player-footer img {
+    width: 14px;
+}
+
+.volume-footer {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+}
+
+.mudo-footer {
+    background: None;
+    border: none;
+}
+
+.mudo-footer img {
+    width: 14px;
+}
+
+.line-volume {
+    padding-bottom: 12px;
 }
 
